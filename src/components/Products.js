@@ -1,8 +1,10 @@
-import React from 'react';
-import React, { useContext } from 'react'; // don't forgot to import useContext 
+
+import React, { useContext } from 'react'; 
+// don't forgot to import useContext 
 
 //Contexts
-import ProductContext from '../contexts/ProductContext.js';
+import {ProductContext} from '../contexts/ProductContext';
+
 
 // Components
 import Product from './Product';
