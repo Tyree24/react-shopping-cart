@@ -24,7 +24,7 @@ const [products] = useState(data);
 		<ProductContext.Provider value={{ products, addItem }}>
 		<CartContext.Provider value={{ cart }}>
 				<div className="App">
-					<Navigation />
+					<Navigation cart={cart} />
 
 					{/* Routes */}
 					<Route
@@ -35,7 +35,7 @@ const [products] = useState(data);
 
 					<Route
 						path="/cart"
-						component={ ShoppingCart }
+						render={() => <ShoppingCart cart={cart} />}
 					/>
 				</div>
 				</CartContext.Provider>
