@@ -42,5 +42,4 @@ const [products] = useState(data);
 		</ProductContext.Provider>
 	);
 }
-
 export default App;
